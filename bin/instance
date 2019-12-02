@@ -34,9 +34,9 @@ db.connect(dbString, function() {
           db.create_market(settings.markets.coin, settings.markets.exchange, market, function(){
         });
       }
-    });  
-  } 
-  
+    });
+  }
+
   db.check_richlist(settings.coin, function(exists){
     if (exists == false) {
       console.log('no richlist entry found, creating now..');
@@ -44,7 +44,7 @@ db.connect(dbString, function() {
 
       });
     }
-  });  
+  });
   if ( settings.heavy == true ) {
     db.check_heavy(settings.coin, function(exists){
       if (exists == false) {
@@ -53,7 +53,7 @@ db.connect(dbString, function() {
 
         });
       }
-    }); 
+    });
   }
 
   var server = app.listen(app.get('port'), function() {

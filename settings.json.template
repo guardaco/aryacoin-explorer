@@ -18,6 +18,9 @@
   // logo
   "logo": "/images/logo.png",
 
+  // guarda
+  "guarda": "/images/guarda.svg",
+
   // favicon
   "favicon": "public/favicon.ico",
 
